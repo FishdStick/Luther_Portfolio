@@ -3414,9 +3414,14 @@ img.u-pull-left {
 }
 
 .about-info__text {
-    padding     : var(--vspace-3_5) 10vw var(--vspace-2) 0;
-    /* margin-left : -4rem; */
-    margin-left: 32px;
+    margin: 32px; /* Remove the large margin */
+    padding: 0; /* Remove left padding if present */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Fill parent height */
+    text-align: center;
 }
 
 .about-info__text .text-pretitle {
@@ -3427,6 +3432,7 @@ img.u-pull-left {
     margin-top    : var(--vspace-1);
     margin-bottom : 0;
 }
+
 
 /* --------------------------------------------------------------------
  * ## about expertise
