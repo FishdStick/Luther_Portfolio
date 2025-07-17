@@ -2674,7 +2674,7 @@ img.u-pull-left {
     transform    : translateX(-6rem);
 }
 
-.text-pretitle.with-line::before {
+.text-pretitle.with-line::before{
     content          : "";
     display          : block;
     height           : 1px;
@@ -2683,6 +2683,27 @@ img.u-pull-left {
     position         : absolute;
     top              : 50%;
     left             : 0;
+}
+
+.text-pretitle.with-double-line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-1);
+    letter-spacing: 0.2em;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;
+}
+
+.text-pretitle.with-double-line::before,
+.text-pretitle.with-double-line::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 4rem;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .text-huge-title {
